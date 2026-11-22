@@ -1,0 +1,17 @@
+{
+  "pack": "Films d'horreur",
+  "theme": "rouge",
+  "thinkSeconds": 4,
+  "films": [
+    { "emojis": ["🦈", "🌊", "🏖️"], "title": "Les Dents de la mer", "year": 1975, "difficulty": 1 },
+    { "emojis": ["🎈", "🤡", "🌧️"], "title": "Ça", "year": 2017, "difficulty": 1 },
+    { "emojis": ["😱", "📞", "🔪"], "title": "Scream", "year": 1996, "difficulty": 1 },
+    { "emojis": ["🎃", "🔪", "🎭"], "title": "Halloween", "year": 1978, "difficulty": 1 },
+    { "emojis": ["🏨", "🪓", "👧", "👧"], "title": "Shining", "year": 1980, "difficulty": 2 },
+    { "emojis": ["🪚", "🧩", "🚲"], "title": "Saw", "year": 2004, "difficulty": 2 },
+    { "emojis": ["😈", "🛏️", "✝️"], "title": "L'Exorciste", "year": 1973, "difficulty": 2 },
+    { "emojis": ["✈️", "💥", "⚰️"], "title": "Destination finale", "year": 2000, "difficulty": 2 },
+    { "emojis": ["🤫", "👂", "👽"], "title": "Sans un bruit", "year": 2018, "difficulty": 3 },
+    { "emojis": ["☕", "🥄", "😶"], "title": "Get Out", "year": 2017, "difficulty": 3 }
+  ]
+}

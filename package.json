@@ -1,0 +1,31 @@
+{
+  "name": "quiz-emoji-films",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fabrique de vidéos TikTok « Devine le film avec des emojis » (Remotion)",
+  "type": "module",
+  "scripts": {
+    "videos": "node scripts/fabriquer-videos.mjs",
+    "couvertures": "node scripts/fabriquer-videos.mjs --couvertures",
+    "apercu": "remotion studio src/index.ts",
+    "verifier": "node scripts/verifier-packs.mjs",
+    "sons": "node scripts/fabriquer-sons.mjs",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@fontsource/fredoka": "5.3.0",
+    "@fontsource/lilita-one": "5.3.0",
+    "@remotion/bundler": "4.0.545",
+    "@remotion/cli": "4.0.545",
+    "@remotion/fonts": "4.0.545",
+    "@remotion/renderer": "4.0.545",
+    "@twemoji/svg": "15.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

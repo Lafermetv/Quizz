@@ -1,0 +1,17 @@
+{
+  "pack": "Années 2000",
+  "theme": "turquoise",
+  "thinkSeconds": 4,
+  "films": [
+    { "emojis": ["⚡", "👓", "🧙‍♂️"], "title": "Harry Potter à l'école des sorciers", "year": 2001, "difficulty": 1 },
+    { "emojis": ["🟢", "👹", "🫏"], "title": "Shrek", "year": 2001, "difficulty": 1 },
+    { "emojis": ["🏴‍☠️", "🦜", "🍾"], "title": "Pirates des Caraïbes", "year": 2003, "difficulty": 1 },
+    { "emojis": ["💍", "🌋", "🧝"], "title": "Le Seigneur des anneaux", "year": 2001, "difficulty": 1 },
+    { "emojis": ["🕷️", "🕸️", "🗽"], "title": "Spider-Man", "year": 2002, "difficulty": 1 },
+    { "emojis": ["🦣", "🐿️", "🌰"], "title": "L'Âge de glace", "year": 2002, "difficulty": 2 },
+    { "emojis": ["🦁", "🦓", "🦒", "🐧"], "title": "Madagascar", "year": 2005, "difficulty": 2 },
+    { "emojis": ["🐼", "🥋", "🥟"], "title": "Kung Fu Panda", "year": 2008, "difficulty": 2 },
+    { "emojis": ["😈", "👠", "👗"], "title": "Le Diable s'habille en Prada", "year": 2006, "difficulty": 3 },
+    { "emojis": ["🦖", "🌙", "🏛️"], "title": "La Nuit au musée", "year": 2006, "difficulty": 3 }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "pack": "Films français",
+  "theme": "bleu",
+  "thinkSeconds": 4,
+  "films": [
+    { "emojis": ["♿", "🤝", "😂"], "title": "Intouchables", "year": 2011, "difficulty": 1 },
+    { "emojis": ["📮", "🥶", "🍟"], "title": "Bienvenue chez les Ch'tis", "year": 2008, "difficulty": 1 },
+    { "emojis": ["🐗", "🏜️", "👑"], "title": "Astérix et Obélix : Mission Cléopâtre", "year": 2002, "difficulty": 1 },
+    { "emojis": ["🏰", "⚔️", "⏳"], "title": "Les Visiteurs", "year": 1993, "difficulty": 1 },
+    { "emojis": ["🍮", "🥄", "📸"], "title": "Le Fabuleux Destin d'Amélie Poulain", "year": 2001, "difficulty": 2 },
+    { "emojis": ["🚕", "💨", "👮"], "title": "Taxi", "year": 1998, "difficulty": 2 },
+    { "emojis": ["🍽️", "🤪", "📞"], "title": "Le Dîner de cons", "year": 1998, "difficulty": 2 },
+    { "emojis": ["🐬", "🌊", "🤿"], "title": "Le Grand Bleu", "year": 1988, "difficulty": 2 },
+    { "emojis": ["🎶", "👦", "🏫"], "title": "Les Choristes", "year": 2004, "difficulty": 3 },
+    { "emojis": ["🔥", "💧", "🌍", "💨"], "title": "Le Cinquième Élément", "year": 1997, "difficulty": 3 }
+  ]
+}

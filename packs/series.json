@@ -1,0 +1,17 @@
+{
+  "pack": "Séries",
+  "theme": "violet",
+  "thinkSeconds": 4,
+  "films": [
+    { "emojis": ["🧇", "🚲", "🔦"], "title": "Stranger Things", "year": 2016, "difficulty": 1 },
+    { "emojis": ["🎭", "💵", "🏦"], "title": "La Casa de Papel", "year": 2017, "difficulty": 1 },
+    { "emojis": ["🐉", "👑", "❄️"], "title": "Game of Thrones", "year": 2011, "difficulty": 1 },
+    { "emojis": ["🦑", "🔴", "🍪"], "title": "Squid Game", "year": 2021, "difficulty": 1 },
+    { "emojis": ["☕", "🛋️", "👫"], "title": "Friends", "year": 1994, "difficulty": 2 },
+    { "emojis": ["🧪", "🚐", "💎"], "title": "Breaking Bad", "year": 2008, "difficulty": 2 },
+    { "emojis": ["✋", "🎻", "🖤"], "title": "Mercredi", "year": 2022, "difficulty": 2 },
+    { "emojis": ["🎩", "💎", "📖"], "title": "Lupin", "year": 2021, "difficulty": 2 },
+    { "emojis": ["🧢", "🪒", "🥃"], "title": "Peaky Blinders", "year": 2013, "difficulty": 3 },
+    { "emojis": ["🗡️", "🪨", "👑"], "title": "Kaamelott", "year": 2005, "difficulty": 3 }
+  ]
+}
