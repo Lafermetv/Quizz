@@ -4,14 +4,14 @@
   "thinkSeconds": 4,
   "films": [
     { "emojis": ["🦖", "🏝️", "🚙"], "title": "Jurassic Park", "year": 1993, "difficulty": 1 },
-    { "emojis": ["🏎️", "💨", "👨‍👩‍👦"], "title": "Fast & Furious", "year": 2001, "difficulty": 1 },
+    { "emojis": ["🏎️", "🏁", "👨‍👩‍👦"], "title": "Fast & Furious", "year": 2001, "difficulty": 1 },
     { "emojis": ["✈️", "😎", "🏐"], "title": "Top Gun", "year": 1986, "difficulty": 1 },
     { "emojis": ["💊", "🕶️", "💻"], "title": "Matrix", "year": 1999, "difficulty": 1 },
     { "emojis": ["🤖", "🕶️", "🏍️"], "title": "Terminator", "year": 1984, "difficulty": 2 },
-    { "emojis": ["🤠", "🐍", "💎"], "title": "Indiana Jones", "year": 1981, "difficulty": 2 },
-    { "emojis": ["🕵️‍♂️", "💣", "📼"], "title": "Mission : Impossible", "year": 1996, "difficulty": 2 },
-    { "emojis": ["⚔️", "🏟️", "🐅"], "title": "Gladiator", "year": 2000, "difficulty": 2 },
-    { "emojis": ["🏜️", "🚚", "🔥"], "title": "Mad Max : Fury Road", "year": 2015, "difficulty": 3 },
-    { "emojis": ["🐶", "✏️", "🔫"], "title": "John Wick", "year": 2014, "difficulty": 3 }
+    { "emojis": ["🤠", "🐍", "🏺"], "title": "Indiana Jones", "year": 1981, "difficulty": 2 },
+    { "emojis": ["🕵️‍♂️", "📼", "💥"], "title": "Mission : Impossible", "year": 1996, "difficulty": 2 },
+    { "emojis": ["🏛️", "⚔️", "👎"], "title": "Gladiator", "year": 2000, "difficulty": 2 },
+    { "emojis": ["🚛", "🎸", "🔥"], "title": "Mad Max : Fury Road", "year": 2015, "difficulty": 3 },
+    { "emojis": ["🐶", "✏️", "🤵"], "title": "John Wick", "year": 2014, "difficulty": 3 }
   ]
 }

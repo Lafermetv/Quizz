@@ -4,111 +4,17 @@
   "thinkSeconds": 4,
   "devine": "le dessin animé",
   "pluriel": "dessins animés",
-  "bareme": [
-    "T'as pas eu d'enfance 🙈",
-    "Enfant de la télé 📺",
-    "Expert des dessins animés 🏆"
-  ],
+  "bareme": ["T'as pas eu d'enfance 🙈", "Enfant de la télé 📺", "Expert des dessins animés 🏆"],
   "films": [
-    {
-      "emojis": [
-        "🧽",
-        "⭐",
-        "🍍"
-      ],
-      "title": "Bob l'éponge",
-      "year": 1999,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "🍩",
-        "🟡",
-        "📺"
-      ],
-      "title": "Les Simpson",
-      "year": 1989,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "⚡",
-        "🐭",
-        "🎒"
-      ],
-      "title": "Pokémon",
-      "year": 1997,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "🐱",
-        "🐭",
-        "🧀"
-      ],
-      "title": "Tom et Jerry",
-      "year": 1940,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "🐶",
-        "👻",
-        "🚐"
-      ],
-      "title": "Scooby-Doo",
-      "year": 1969,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "🐉",
-        "🟠",
-        "⭐"
-      ],
-      "title": "Dragon Ball Z",
-      "year": 1989,
-      "difficulty": 2
-    },
-    {
-      "emojis": [
-        "🍥",
-        "🦊",
-        "🥷"
-      ],
-      "title": "Naruto",
-      "year": 2002,
-      "difficulty": 2
-    },
-    {
-      "emojis": [
-        "🐱",
-        "🪳",
-        "🛋️"
-      ],
-      "title": "Oggy et les Cafards",
-      "year": 1998,
-      "difficulty": 2
-    },
-    {
-      "emojis": [
-        "🕵️‍♀️",
-        "💄",
-        "🌍"
-      ],
-      "title": "Totally Spies",
-      "year": 2001,
-      "difficulty": 3
-    },
-    {
-      "emojis": [
-        "💻",
-        "🌐",
-        "⚔️"
-      ],
-      "title": "Code Lyoko",
-      "year": 2003,
-      "difficulty": 3
-    }
+    { "emojis": ["🧽", "⭐", "🍍"], "title": "Bob l'éponge", "year": 1999, "difficulty": 1 },
+    { "emojis": ["🍩", "🛹", "🎷"], "title": "Les Simpson", "year": 1989, "difficulty": 1 },
+    { "emojis": ["⚡", "🐭", "🧢", "🐢"], "title": "Pokémon", "year": 1997, "difficulty": 1 },
+    { "emojis": ["🐱", "🐭", "🧀"], "title": "Tom et Jerry", "year": 1940, "difficulty": 1 },
+    { "emojis": ["🐶", "👻", "🚐"], "title": "Scooby-Doo", "year": 1969, "difficulty": 1 },
+    { "emojis": ["🐉", "7️⃣", "🥋"], "title": "Dragon Ball Z", "year": 1989, "difficulty": 2 },
+    { "emojis": ["🍜", "🦊", "🥷"], "title": "Naruto", "year": 2002, "difficulty": 2 },
+    { "emojis": ["🐱", "🪳", "🪳", "🪳"], "title": "Oggy et les Cafards", "year": 1998, "difficulty": 2 },
+    { "emojis": ["🕵️‍♀️", "👩‍🦰", "👱‍♀️", "💄"], "title": "Totally Spies", "year": 2001, "difficulty": 3 },
+    { "emojis": ["🏭", "💻", "👁️"], "title": "Code Lyoko", "year": 2003, "difficulty": 3 }
   ]
 }

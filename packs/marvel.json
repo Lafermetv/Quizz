@@ -2,111 +2,17 @@
   "pack": "Marvel",
   "theme": "bleu",
   "thinkSeconds": 4,
-  "bareme": [
-    "T'as jamais vu un Marvel 🙈",
-    "Fan du dimanche 🍿",
-    "Expert Marvel 🦸"
-  ],
+  "bareme": ["T'as jamais vu un Marvel 🙈", "Fan du dimanche 🍿", "Expert Marvel 🦸"],
   "films": [
-    {
-      "emojis": [
-        "🦾",
-        "🧔",
-        "💥"
-      ],
-      "title": "Iron Man",
-      "year": 2008,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "⚡",
-        "🔨",
-        "👱‍♂️"
-      ],
-      "title": "Thor",
-      "year": 2011,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "🛡️",
-        "⭐",
-        "🇺🇸"
-      ],
-      "title": "Captain America",
-      "year": 2011,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "🐆",
-        "👑",
-        "💜"
-      ],
-      "title": "Black Panther",
-      "year": 2018,
-      "difficulty": 1
-    },
-    {
-      "emojis": [
-        "🦝",
-        "🌳",
-        "🚀"
-      ],
-      "title": "Les Gardiens de la Galaxie",
-      "year": 2014,
-      "difficulty": 2
-    },
-    {
-      "emojis": [
-        "🧤",
-        "💎",
-        "⏳"
-      ],
-      "title": "Avengers : Endgame",
-      "year": 2019,
-      "difficulty": 2
-    },
-    {
-      "emojis": [
-        "🐜",
-        "🔬",
-        "🦸‍♂️"
-      ],
-      "title": "Ant-Man",
-      "year": 2015,
-      "difficulty": 2
-    },
-    {
-      "emojis": [
-        "🔴",
-        "🗡️",
-        "🌮"
-      ],
-      "title": "Deadpool",
-      "year": 2016,
-      "difficulty": 2
-    },
-    {
-      "emojis": [
-        "🧙‍♂️",
-        "🌀",
-        "⏰"
-      ],
-      "title": "Doctor Strange",
-      "year": 2016,
-      "difficulty": 3
-    },
-    {
-      "emojis": [
-        "🕷️",
-        "🕷️",
-        "🕷️"
-      ],
-      "title": "Spider-Man : No Way Home",
-      "year": 2021,
-      "difficulty": 3
-    }
+    { "emojis": ["🧔", "🦾", "🚀"], "title": "Iron Man", "year": 2008, "difficulty": 1 },
+    { "emojis": ["⚡", "🔨", "👱‍♂️"], "title": "Thor", "year": 2011, "difficulty": 1 },
+    { "emojis": ["🛡️", "⭐", "🇺🇸"], "title": "Captain America", "year": 2011, "difficulty": 1 },
+    { "emojis": ["🐆", "🖤", "👑"], "title": "Black Panther", "year": 2018, "difficulty": 1 },
+    { "emojis": ["🦝", "🌳", "🌌"], "title": "Les Gardiens de la Galaxie", "year": 2014, "difficulty": 2 },
+    { "emojis": ["🧤", "💎", "⏪"], "title": "Avengers : Endgame", "year": 2019, "difficulty": 2 },
+    { "emojis": ["🐜", "🦸‍♂️", "🤏"], "title": "Ant-Man", "year": 2015, "difficulty": 2 },
+    { "emojis": ["💀", "🎱", "⚔️"], "title": "Deadpool", "year": 2016, "difficulty": 2 },
+    { "emojis": ["👨‍⚕️", "🧙‍♂️", "👁️"], "title": "Doctor Strange", "year": 2016, "difficulty": 3 },
+    { "emojis": ["🕷️", "🚫", "🏠"], "title": "Spider-Man : No Way Home", "year": 2021, "difficulty": 3 }
   ]
 }

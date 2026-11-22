@@ -3,15 +3,15 @@
   "theme": "orange",
   "thinkSeconds": 4,
   "films": [
-    { "emojis": ["🦁", "👑", "🌅"], "title": "Le Roi Lion", "year": 1994, "difficulty": 1 },
+    { "emojis": ["🦁", "👑", "🐗"], "title": "Le Roi Lion", "year": 1994, "difficulty": 1 },
     { "emojis": ["❄️", "👸", "⛄"], "title": "La Reine des neiges", "year": 2013, "difficulty": 1 },
-    { "emojis": ["🤠", "🧸", "🚀"], "title": "Toy Story", "year": 1995, "difficulty": 1 },
-    { "emojis": ["🐠", "🔍", "🌊"], "title": "Le Monde de Nemo", "year": 2003, "difficulty": 1 },
+    { "emojis": ["🤠", "👨‍🚀", "🦖"], "title": "Toy Story", "year": 1995, "difficulty": 1 },
+    { "emojis": ["🐠", "🐟", "🦈"], "title": "Le Monde de Nemo", "year": 2003, "difficulty": 1 },
     { "emojis": ["🐀", "👨‍🍳", "🍲"], "title": "Ratatouille", "year": 2007, "difficulty": 2 },
     { "emojis": ["🎈", "🏠", "👴"], "title": "Là-haut", "year": 2009, "difficulty": 2 },
     { "emojis": ["🧠", "😄", "😢", "😡"], "title": "Vice-Versa", "year": 2015, "difficulty": 2 },
-    { "emojis": ["💀", "🎸", "🌼"], "title": "Coco", "year": 2017, "difficulty": 2 },
-    { "emojis": ["🤖", "🌱", "🚀"], "title": "WALL-E", "year": 2008, "difficulty": 3 },
+    { "emojis": ["💀", "🎸", "👵"], "title": "Coco", "year": 2017, "difficulty": 2 },
+    { "emojis": ["🤖", "🗑️", "🌱"], "title": "WALL-E", "year": 2008, "difficulty": 3 },
     { "emojis": ["👱‍♀️", "🍳", "🦎"], "title": "Raiponce", "year": 2010, "difficulty": 3 }
   ]
 }

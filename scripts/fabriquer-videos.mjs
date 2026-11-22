@@ -18,10 +18,11 @@ import { verifierPacks } from './verifier-packs.mjs';
 const args = process.argv.slice(2);
 const flag = (name) => args.includes(name);
 const value = (name) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : undefined; };
-const wanted = args.filter((a, i) => !a.startsWith('--') && !(i > 0 && args[i - 1] === '--fps'));
+const wanted = args.filter((a, i) => !a.startsWith('--') && !(i > 0 && ['--fps', '--concurrence'].includes(args[i - 1])));
 const fps = Number(value('--fps') || 30);
 const coversOnly = flag('--couvertures');
 const noCovers = flag('--sans-couverture');
+const concurrency = value('--concurrence') ? Number(value('--concurrence')) : null; // null = réglage automatique
 
 // Navigateur utilisé pour le rendu : Remotion télécharge le sien automatiquement si besoin.
 const browserExecutable = process.env.QUIZ_NAVIGATEUR || (fs.existsSync('/opt/pw-browsers/chromium_headless_shell') ? '/opt/pw-browsers/chromium_headless_shell' : null);
@@ -69,6 +70,7 @@ for (const comp of videos) {
     browserExecutable,
     imageFormat: 'jpeg',
     jpegQuality: 95,
+    concurrency,
     onProgress: ({ progress }) => {
       const p = Math.floor(progress * 100);
       if (p !== last && p % 5 === 0) { last = p; process.stdout.write(`\r🎬 ${comp.id} : ${p} %   `); }
