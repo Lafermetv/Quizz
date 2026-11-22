@@ -5,3 +5,4 @@ out/
 public/affiches/*
 !public/affiches/.gitkeep
 tmdb.txt
+public/images/

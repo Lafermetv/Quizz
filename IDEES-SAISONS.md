@@ -16,40 +16,40 @@ Des personnages de fiction (films, dessins animés, jeux vidéo).
 
 | Emojis | Réponse |
 |---|---|
-| 🍄👨‍🔧🔴 | Mario |
+| 🍄👨‍🔧🇮🇹 | Mario |
 | 🦔💨💍 | Sonic |
 | 🧜‍♀️🍴🐠 | Ariel |
 | 🕷️🧑‍🎓🏙️ | Spider-Man |
-| 🟢👂✨ | Yoda |
+| 🐸👴🌌 | Yoda |
 | 🧽🍔⭐ | Bob l'éponge |
-| 🐭🧀🏠 | Rémy (Ratatouille) |
+| 🐀👨‍🍳🍲 | Rémy (Ratatouille) |
 | 🦇🃏😂 | Le Joker |
 
 **Variante :** « Devine le méchant » (Scar, Ursula, Dark Vador…).
-**À la réponse :** une image du personnage (même risque que les affiches).
+**À la réponse :** une image du personnage, tirée de son film ou de son jeu.
 
 ## Saison 3 : les footballeurs ⚽ 🔴
 | Emojis | Réponse |
 |---|---|
 | 🐐🇦🇷🔟 | Messi |
-| 🗣️🇵🇹🏆 | Cristiano Ronaldo (« SIUUU ») |
+| 🇵🇹7️⃣🗣️ | Cristiano Ronaldo (CR7, « SIUUU ») |
 | 🐢🇫🇷⚡ | Mbappé (la « tortue ninja ») |
-| 🧑‍🦲🇫🇷🏆 | Zidane |
+| 🇫🇷🧑‍🦲🐏 | Zidane (le coup de boule) |
 | 🇧🇷🤸‍♂️💇‍♂️ | Neymar |
 | 🧘‍♂️🤖🇳🇴 | Haaland |
 | 📞🕺🇫🇷 | Griezmann (célébration « Hotline Bling ») |
 
-**À la réponse :** la photo du joueur. Attention : il y a le droit à l'image du joueur, plus les droits du photographe. Montrer seulement les emojis et le nom ne pose aucun problème.
+**À la réponse :** la photo du joueur. Le moteur va la chercher sur Wikimedia Commons, des photos publiques sous licence libre, et affiche le crédit du photographe tout seul. Test réussi sur Messi et Mbappé.
 
 ## Saison 4 : les clubs de foot 🟢
 | Emojis | Réponse |
 |---|---|
-| 🗼⚽🔵🔴 | PSG |
-| 🌊⭐⚪🔵 | OM |
-| 👑⚪🇪🇸 | Real Madrid |
-| 🐦🔴🏴󠁧󠁢󠁥󠁮󠁧󠁿 | Liverpool |
-| 🦓⚫⚪ | Juventus |
-| 🔫🔴⚪ | Arsenal |
+| 🗼⚽💙❤️ | PSG |
+| 🌊⭐🤍💙 | OM |
+| 👑🤍🇪🇸 | Real Madrid |
+| 🐦❤️🇬🇧 | Liverpool |
+| 🦓🖤🤍🇮🇹 | Juventus |
+| 🔫❤️🇬🇧 | Arsenal (les « Gunners ») |
 
 ## Saison 5 : les pays et les villes 🟢
 | Emojis | Réponse |
@@ -65,16 +65,22 @@ Des personnages de fiction (films, dessins animés, jeux vidéo).
 
 **À la réponse :** le drapeau ou une carte, faits par nous, donc aucun problème de droits.
 
-## Saison 6 : les chansons 🎵 🟡
+## Saison 6 : les chansons 🎵 🟡 (à garder pour les tubes très connus)
+Ça ne marche que si le titre se dessine : on garde les tubes dont les emojis disent presque le titre.
+
 | Emojis | Réponse |
 |---|---|
+| ❄️👸🔓 | Libérée, délivrée |
+| 👶🦈🎶 | Baby Shark |
+| 🧟🕺🌕 | Thriller |
+| ☂️🌧️💃 | Umbrella |
+| 🐴🕺🇰🇷 | Gangnam Style |
+| 😊👏🎩 | Happy |
+| 💎💎✨ | Diamonds |
 | 🐢🎶💃 | Despacito (« despacio » = doucement) |
-| ❄️👸🎤 | Libérée, délivrée |
-| 🕺🔁💸 | Alors on danse |
-| 👑🎤🎸 | Bohemian Rhapsody |
-| 🌧️☂️💃 | Umbrella |
 
-**Bonus :** on peut faire écouter 2 secondes de la chanson à la réponse… mais là, TikTok coupe très souvent le son. Le mieux est de ne mettre que le titre.
+**À éviter :** les titres abstraits comme « Alors on danse », impossibles à deviner.
+**À la réponse :** la pochette du single. On ne fait pas écouter la chanson, sinon TikTok coupe le son.
 
 ## Saison 7 : les chanteurs et rappeurs 🔴
 | Emojis | Réponse |
@@ -83,7 +89,10 @@ Des personnages de fiction (films, dessins animés, jeux vidéo).
 | 💅🇲🇱🎤 | Aya Nakamura |
 | 🕶️🎤🇨🇩 | Gims |
 | 🇧🇪🎩🕺 | Stromae |
-| 🎤👑🐝 | Beyoncé (« Queen B ») |
+| 🐝👑🎤 | Beyoncé (« Queen B »), à tester |
+
+**Astuce :** le drapeau du pays d'origine aide beaucoup (🇲🇱, 🇨🇩, 🇧🇪).
+**À la réponse :** la photo de l'artiste (photo libre de Wikimedia Commons, crédit affiché automatiquement).
 
 ## Saison 8 : les jeux vidéo 🎮 🟢
 | Emojis | Réponse |
@@ -118,9 +127,9 @@ Des personnages de fiction (films, dessins animés, jeux vidéo).
 | 🐊👕 | Lacoste |
 | 🍔🤡 | McDonald's |
 | 🧜‍♀️☕ | Starbucks |
-| 🐂🥤 | Red Bull |
+| 🐂🪽🥫 | Red Bull (« donne des ailes ») |
 
-**À la réponse :** le nom écrit, sans le logo (les logos sont des marques déposées).
+**À la réponse :** le logo de la marque. Les logos sont des marques déposées, comme pour les affiches : c'est toi qui décides.
 
 ## Saison 11 : les mots cachés 🧩 🟢
 Chaque emoji donne une partie du mot, comme un rébus.
@@ -129,11 +138,18 @@ Chaque emoji donne une partie du mot, comme un rébus.
 | 🧑‍🦲🐭 | Chauve-souris |
 | 🍎🌍 | Pomme de terre |
 | 🏹☁️ | Arc-en-ciel |
-| 🌞🌻 | Tournesol |
+| 🗼☀️ | Tournesol (« tour » + « soleil ») |
 | 🐞 | Coccinelle (version « 1 seul emoji ») |
 
 ## Saison 12 : les youtubeurs et les stars 🔴
-Squeezie, Inoxtag (🏔️🎒🇳🇵, l'Everest), Elon Musk (🚀🚗🐦)… Ça marche très bien en commentaires, mais c'est la même règle que pour les footballeurs pour les photos.
+| Emojis | Réponse |
+|---|---|
+| 🏔️🎒🇳🇵 | Inoxtag (l'Everest) |
+| 🚀🚗🐦 | Elon Musk |
+| 🍋🎮🇫🇷 | Squeezie (« le citron ») |
+| 👹💸🍔 | MrBeast (« la bête », l'argent, ses burgers) |
+
+**À la réponse :** la photo publique de la personne, avec le crédit affiché.
 
 ## Éditions spéciales selon le calendrier 📅
 - **Octobre :** films d'horreur, personnages d'Halloween.
@@ -151,6 +167,15 @@ Squeezie, Inoxtag (🏔️🎒🇳🇵, l'Everest), Elon Musk (🚀🚗🐦)… 
 - **Trouve l'intrus** : 4 films, un seul est le bon.
 - **Duel** : « Commente ton score et identifie un pote ».
 - **Partie 1 / 2 / 3** : la fin de chaque vidéo annonce la suivante, pour donner envie de s'abonner.
+
+## Les emojis : la « banque »
+- Il n'existe pas plus d'emojis que la liste officielle, environ 3 700. On utilise le plus beau jeu qu'on a le droit d'utiliser : **Microsoft Fluent 3D** (brillant, effet jouet, licence libre MIT).
+- Ce qui fait la différence, c'est le **choix** des emojis. Les règles qui marchent :
+  1. **Un emoji = un détail célèbre** (la tortue de Mbappé, le citron de Squeezie, le crayon de John Wick).
+  2. **Le drapeau** pour une personne ou un pays.
+  3. **Du plus vague au plus précis** : le dernier emoji fait « tilt ».
+  4. **Pas d'emoji abstrait** (🔁, 💸) : on ne les comprend pas en 1 seconde.
+- La planche `docs/planche-emojis-saisons.jpg` montre chaque idée avec les vrais emojis 3D de la vidéo.
 
 ## Rappel sur les droits
 - **Emojis, textes, couleurs, sons et musique du projet :** aucun risque.

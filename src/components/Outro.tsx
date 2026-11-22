@@ -8,17 +8,14 @@ import { Sfx } from './Sfx';
 import { Wipe } from './Wipe';
 
 /** Écran de fin : barème + incitation à commenter et à s'abonner. */
-export const Outro: React.FC<{ palette: Palette; count: number; part?: number; totalParts?: number; beatFrames: number; wipe: number }> = ({ palette, count, part, totalParts, beatFrames, wipe }) => {
+export const Outro: React.FC<{ palette: Palette; count: number; part?: number; totalParts?: number; beatFrames: number; wipe: number; bareme?: string[] }> = ({ palette, count, part, totalParts, beatFrames, wipe, bareme }) => {
   const frame = useCurrentFrame() - wipe;
   const { fps } = useVideoConfig();
   const sp = (at: number) => spring({ frame: frame - at, fps, config: { damping: 10, stiffness: 160, mass: 0.7 } });
   const lowMax = Math.round(count * 0.3);
   const midMax = Math.round(count * 0.7);
-  const rows = [
-    `0-${lowMax} · T'as jamais vu un film 🙈`,
-    `${lowMax + 1}-${midMax} · Cinéphile du dimanche 🍿`,
-    `${midMax + 1}-${count} · Expert du cinéma 🏆`,
-  ];
+  const labels = bareme && bareme.length >= 3 ? bareme : ["T'as jamais vu un film 🙈", 'Cinéphile du dimanche 🍿', 'Expert du cinéma 🏆'];
+  const rows = [`0-${lowMax} · ${labels[0]}`, `${lowMax + 1}-${midMax} · ${labels[1]}`, `${midMax + 1}-${count} · ${labels[2]}`];
   const next = part && totalParts && part < totalParts ? `Abonne-toi pour la partie ${part + 1} 🔔` : part ? `Abonne-toi pour d'autres quiz 🔔` : `Abonne-toi pour la partie 2 🔔`;
   const trophy = sp(0);
   const float = Math.sin((Math.max(0, frame) / (2.4 * fps)) * Math.PI * 2);

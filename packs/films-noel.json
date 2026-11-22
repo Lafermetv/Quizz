@@ -1,12 +1,112 @@
-{ "pack": "Films de Noël", "theme": "rouge", "thinkSeconds": 4, "films": [
-  { "emojis": ["🏠", "👦", "🎄"], "title": "Maman, j'ai raté l'avion", "year": 1990, "difficulty": 1 },
-  { "emojis": ["🟢", "🎄", "😠"], "title": "Le Grinch", "year": 2000, "difficulty": 1 },
-  { "emojis": ["🚂", "❄️", "🎅"], "title": "Le Pôle express", "year": 2004, "difficulty": 1 },
-  { "emojis": ["🎃", "💀", "🎄"], "title": "L'Étrange Noël de monsieur Jack", "year": 1993, "difficulty": 1 },
-  { "emojis": ["🧝", "🎅", "🍝"], "title": "Elfe", "year": 2003, "difficulty": 2 },
-  { "emojis": ["🎅", "📞", "🗑️"], "title": "Le père Noël est une ordure", "year": 1982, "difficulty": 2 },
-  { "emojis": ["❤️", "🎄", "🇬🇧"], "title": "Love Actually", "year": 2003, "difficulty": 2 },
-  { "emojis": ["🐾", "💦", "🎄"], "title": "Gremlins", "year": 1984, "difficulty": 2 },
-  { "emojis": ["📮", "🎁", "🪵"], "title": "Klaus", "year": 2019, "difficulty": 3 },
-  { "emojis": ["🏡", "✈️", "💕"], "title": "The Holiday", "year": 2006, "difficulty": 3 }
-] }
+{
+  "pack": "Films de Noël",
+  "theme": "rouge",
+  "thinkSeconds": 4,
+  "bareme": [
+    "T'es le Grinch 🙈",
+    "Lutin du père Noël 🎄",
+    "Expert de Noël 🎅"
+  ],
+  "films": [
+    {
+      "emojis": [
+        "🏠",
+        "👦",
+        "🎄"
+      ],
+      "title": "Maman, j'ai raté l'avion",
+      "year": 1990,
+      "difficulty": 1
+    },
+    {
+      "emojis": [
+        "🟢",
+        "🎄",
+        "😠"
+      ],
+      "title": "Le Grinch",
+      "year": 2000,
+      "difficulty": 1
+    },
+    {
+      "emojis": [
+        "🚂",
+        "❄️",
+        "🎅"
+      ],
+      "title": "Le Pôle express",
+      "year": 2004,
+      "difficulty": 1
+    },
+    {
+      "emojis": [
+        "🎃",
+        "💀",
+        "🎄"
+      ],
+      "title": "L'Étrange Noël de monsieur Jack",
+      "year": 1993,
+      "difficulty": 1
+    },
+    {
+      "emojis": [
+        "🧝",
+        "🎅",
+        "🍝"
+      ],
+      "title": "Elfe",
+      "year": 2003,
+      "difficulty": 2
+    },
+    {
+      "emojis": [
+        "🎅",
+        "📞",
+        "🗑️"
+      ],
+      "title": "Le père Noël est une ordure",
+      "year": 1982,
+      "difficulty": 2
+    },
+    {
+      "emojis": [
+        "❤️",
+        "🎄",
+        "🇬🇧"
+      ],
+      "title": "Love Actually",
+      "year": 2003,
+      "difficulty": 2
+    },
+    {
+      "emojis": [
+        "🐾",
+        "💦",
+        "🎄"
+      ],
+      "title": "Gremlins",
+      "year": 1984,
+      "difficulty": 2
+    },
+    {
+      "emojis": [
+        "📮",
+        "🎁",
+        "🪵"
+      ],
+      "title": "Klaus",
+      "year": 2019,
+      "difficulty": 3
+    },
+    {
+      "emojis": [
+        "🏡",
+        "✈️",
+        "💕"
+      ],
+      "title": "The Holiday",
+      "year": 2006,
+      "difficulty": 3
+    }
+  ]
+}

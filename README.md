@@ -47,6 +47,7 @@ La première fois, l'outil télécharge tout seul un petit navigateur, c'est nor
 | une seule vidéo | `npm run videos -- disney-pixar` |
 | une vidéo plus fluide (60 images/s) | `npm run videos -- --fps 60` |
 | seulement les couvertures (rapide) | `npm run couvertures` |
+| télécharger les images des réponses | `npm run images` |
 | vérifier mes listes de films | `npm run verifier` |
 | regarder une vidéo sans l'exporter | `npm run apercu` |
 
@@ -77,23 +78,48 @@ Ouvre un fichier du dossier `packs/` avec TextEdit, ou mieux avec un éditeur co
 
 Après chaque modification, lance `npm run verifier` : la commande te dit si un emoji n'existe pas ou si une virgule manque.
 
-## 4. Les affiches de films
+## 4. Les images des réponses (affiches, photos, logos…)
 
-À la réponse, l'affiche du film s'affiche en grand. Pour les récupérer :
+À chaque réponse, une image s'affiche en grand : l'affiche du film, la photo du joueur, le logo du club, etc. Pour les récupérer :
 
 ```bash
-npm run affiches
+npm run images
 ```
 
-- Les images vont dans `public/affiches/` (ex. `le-roi-lion.jpg`). Une affiche déjà là n'est jamais remplacée.
-- **Affiches nettes et en français** : crée un compte gratuit sur themoviedb.org, demande une clé API (Paramètres → API), colle-la dans un fichier `tmdb.txt` à la racine du projet. Sans clé, les affiches viennent de Wikipédia (plus petites).
-- Une affiche introuvable ? Dépose l'image toi-même avec le nom indiqué.
-- Pas d'affiche pour un film = la réponse s'affiche en texte, comme avant.
-- Les affiches ne sont pas envoyées sur GitHub.
+- Les images vont dans `public/affiches/` pour les films (ex. `le-roi-lion.jpg`), ou dans le dossier choisi par le pack (voir plus bas). Une image déjà là n'est jamais remplacée.
+- **Affiches de films nettes et en français** : crée un compte gratuit sur themoviedb.org, demande une clé API (Paramètres → API) et colle-la dans un fichier `tmdb.txt` à la racine du projet. Sans clé, les images viennent de Wikipédia.
+- **Crédits** : quand une photo est sous licence libre (Wikimedia Commons), son auteur est noté tout seul dans `credits.json`. Il s'affiche en petit à côté de l'image dans la vidéo.
+- **Image introuvable ou mauvaise ?** Dépose toi-même l'image avec le nom indiqué. Tu peux aussi écrire dans la question `"image": "https://…"` (l'adresse d'une image trouvée sur internet).
+- Une question sans image : la réponse s'affiche en texte, comme avant.
+- Les images ne sont pas envoyées sur GitHub.
+
+### Faire une autre saison (personnages, joueurs, pays…)
+
+Ajoute ces lignes en haut du fichier du pack :
+
+```json
+{
+  "pack": "Footballeurs",
+  "devine": "le joueur",
+  "pluriel": "joueurs",
+  "recherche": "footballeur",
+  "dossierImages": "images/footballeurs",
+  "bareme": ["T'as jamais vu un match 🙈", "Supporter du dimanche ⚽", "Expert du ballon rond 🏆"],
+  "questions": [
+    { "emojis": ["🐐", "🇦🇷", "🔟"], "title": "Lionel Messi" }
+  ]
+}
+```
+
+- **devine** : ce qui s'affiche après « DEVINE » (« le joueur », « la ville », « l'expression »…).
+- **pluriel** : le mot pour l'intro (« 10 joueurs »).
+- **recherche** : un mot ajouté à la recherche d'images (« footballeur », « club de football », « pays »…).
+- **dossierImages** : où ranger les images de cette saison.
+- **bareme** : les 3 phrases de l'écran de fin.
 
 ## 5. Droits d'auteur
 
-- **Affiches** : elles appartiennent aux studios. TikTok peut couper le son ou retirer une vidéo sur réclamation ; la courte durée n'est pas une protection légale en France.
+- **Affiches, logos, photos de personnes** : les affiches et logos appartiennent à leurs propriétaires, et les personnes ont un droit à l'image. TikTok peut couper le son ou retirer une vidéo après une réclamation. Que l'image reste peu de temps à l'écran ne protège pas en France. Les photos libres (Wikimedia Commons) sont créditées automatiquement.
 - **Emojis** : les emojis 3D « Fluent » de Microsoft (licence MIT), et Twemoji (CC BY 4.0) quand un emoji n'existe pas en 3D. Le crédit est affiché en petit sur l'écran de fin.
 - **Polices** : Lilita One et Fredoka, licence libre (OFL).
 - **Bruitages et musique** : fabriqués par ce projet (`npm run sons`), donc 100 % originaux. Tu peux aussi les remplacer par tes propres fichiers dans `public/sfx/` et `public/musique/`.

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Img, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
-import type { Film } from '../lib/packs';
+import type { AnswerImage, Film } from '../lib/packs';
 import type { RoundPlan } from '../lib/plan';
 import { inkOn, type Palette } from '../lib/theme';
 import { TEXT_FONT, TITLE_FONT } from '../lib/fonts';
@@ -9,7 +9,7 @@ import { Confetti } from './Confetti';
 import { Emoji } from './Emoji';
 import { Sfx } from './Sfx';
 import { Wipe } from './Wipe';
-import { posterFor } from '../lib/posters';
+import { DevineWord, fitFont } from './DevineTitle';
 
 const W = 1080;
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
@@ -22,7 +22,9 @@ export const Round: React.FC<{
   palette: Palette;
   beatFrames: number;
   wipe: number;
-}> = ({ film, index, total, plan, palette, beatFrames, wipe }) => {
+  devine: string;
+  image: AnswerImage;
+}> = ({ film, index, total, plan, palette, beatFrames, wipe, devine, image }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   // tout en images relatives au début de la séquence
@@ -54,7 +56,16 @@ export const Round: React.FC<{
   // ----- réponse -----
   const ans = spring({ frame: frame - reveal - Math.round(0.15 * fps), fps, config: { damping: 9, stiffness: 150, mass: 0.7 } });
   const title = film.title;
-  const poster = posterFor(film);
+  const poster = image;
+  // l'image garde ses proportions : au plus 860 × 705, posée juste au-dessus du titre
+  const fit = poster ? Math.min(860 / poster.w, 705 / poster.h) : 1;
+  const imgW = poster ? Math.round(poster.w * fit) : 0;
+  const imgH = poster ? Math.round(poster.h * fit) : 0;
+  const imgLeft = 540 - imgW / 2;
+  // centrée entre les emojis (en haut) et la zone sûre du bas ; le titre chevauche un peu le bas de l'image
+  const imgTop = Math.round(952 - imgH / 2);
+  const overlap = Math.min(80, Math.round(imgH * 0.12));
+  const labelTop = imgTop + imgH - overlap;
   const titleSize = poster ? (title.length > 26 ? 66 : title.length > 17 ? 80 : 96) : title.length > 26 ? 86 : title.length > 17 ? 100 : 119;
   // affiche : arrive en « coup de tampon » avec un flash blanc et une petite secousse
   const ps = spring({ frame: frame - reveal, fps, config: { damping: 11, stiffness: 170, mass: 0.8 } });
@@ -81,8 +92,8 @@ export const Round: React.FC<{
       </div>
 
       {/* titre */}
-      <h1 style={{ opacity: poster ? 1 - r : 1, margin: 0, position: 'absolute', top: 405, width: '100%', textAlign: 'center', font: `113px/1 ${TITLE_FONT}`, letterSpacing: '0.02em', color: '#fff', textShadow: '0 12px 0 rgba(0,0,0,.25)' }}>
-        DEVINE LE <span style={{ color: palette.acc }}>FILM</span>
+      <h1 style={{ opacity: poster ? 1 - r : 1, margin: 0, position: 'absolute', top: 405, width: '100%', textAlign: 'center', font: `${fitFont(`DEVINE ${devine}`, 113)}px/1 ${TITLE_FONT}`, letterSpacing: '0.02em', color: '#fff', textShadow: '0 12px 0 rgba(0,0,0,.25)' }}>
+        DEVINE <DevineWord devine={devine} acc={palette.acc} />
       </h1>
 
       {/* les emojis */}
@@ -127,13 +138,18 @@ export const Round: React.FC<{
       {/* réponse */}
       {frame >= reveal && poster && (
         <div style={{ position: 'absolute', inset: 0, transform: `translate(${shake}px, ${shake * 0.5}px)` }}>
-          <div style={{ position: 'absolute', left: 305, top: 600, width: 470, height: 705, transform: `scale(${1.7 - 0.7 * ps}) rotate(${-3 + (1 - ps) * 10}deg)`, opacity: Math.min(1, ps * 2.5) }}>
-            <Img src={poster} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 26, border: '12px solid #fff', boxShadow: '0 26px 50px rgba(0,0,0,.35)', boxSizing: 'border-box', display: 'block' }} />
+          <div style={{ position: 'absolute', left: imgLeft, top: imgTop, width: imgW, height: imgH, transform: `scale(${1.7 - 0.7 * ps}) rotate(${-3 + (1 - ps) * 10}deg)`, opacity: Math.min(1, ps * 2.5) }}>
+            <Img src={poster.src} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 26, border: '12px solid #fff', background: '#fff', boxShadow: '0 26px 50px rgba(0,0,0,.35)', boxSizing: 'border-box', display: 'block' }} />
             {film.year ? (
               <div style={{ position: 'absolute', right: -46, top: -34, transform: `rotate(12deg) scale(${lbl})`, font: `50px/1 ${TITLE_FONT}`, background: palette.acc, color: inkOn(palette.acc), padding: '18px 22px 12px', borderRadius: 26, boxShadow: '0 8px 0 rgba(0,0,0,.22)' }}>{film.year}</div>
             ) : null}
+            {poster.credit ? (
+              <div style={{ position: 'absolute', right: '100%', bottom: 14, marginRight: 10, height: imgH - 28, writingMode: 'vertical-rl', transform: 'rotate(180deg)', font: `600 21px/1 ${TEXT_FONT}`, color: '#fff', opacity: 0.85, textShadow: '0 2px 4px rgba(0,0,0,.5)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                {poster.credit}
+              </div>
+            ) : null}
           </div>
-          <div style={{ position: 'absolute', top: 1225, left: 40, right: 40, textAlign: 'center', transform: `scale(${lbl}) rotate(${(1 - lbl) * -14}deg)`, opacity: Math.min(1, lbl * 3) }}>
+          <div style={{ position: 'absolute', top: labelTop, left: 40, right: 40, textAlign: 'center', transform: `scale(${lbl}) rotate(${(1 - lbl) * -14}deg)`, opacity: Math.min(1, lbl * 3) }}>
             <div style={{ display: 'inline-block', font: `${titleSize}px/1.04 ${TITLE_FONT}`, textWrap: 'balance', background: '#fff', color: palette.c2, padding: '26px 50px 18px', borderRadius: 44, boxShadow: '0 15px 0 rgba(0,0,0,.2)', transform: 'rotate(-2deg)', maxWidth: 1000 }}>
               {title}
             </div>

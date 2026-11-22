@@ -11,7 +11,8 @@
     "verifier": "node scripts/verifier-packs.mjs",
     "sons": "node scripts/fabriquer-sons.mjs",
     "typecheck": "tsc",
-    "affiches": "node scripts/telecharger-affiches.mjs"
+    "affiches": "node scripts/telecharger-images.mjs",
+    "images": "node scripts/telecharger-images.mjs"
   },
   "dependencies": {
     "@fontsource/fredoka": "5.3.0",
