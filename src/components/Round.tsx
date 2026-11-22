@@ -135,6 +135,8 @@ export const Round: React.FC<{
         {sec}
       </div>
 
+      {/* confettis derrière l'affiche et le titre, pour ne jamais cacher la réponse */}
+      <Confetti at={reveal} x={540} y={poster ? 950 : 1060} seed={`c${index}`} />
       {/* réponse */}
       {frame >= reveal && poster && (
         <div style={{ position: 'absolute', inset: 0, transform: `translate(${shake}px, ${shake * 0.5}px)` }}>
@@ -183,7 +185,6 @@ export const Round: React.FC<{
         </div>
       )}
       {poster && frame >= reveal && <div style={{ position: 'absolute', inset: 0, background: '#fff', opacity: flash }} />}
-      <Confetti at={reveal} x={540} y={poster ? 950 : 1060} seed={`c${index}`} />
 
       {/* sons */}
       <Sfx at={0} name="whoosh" volume={0.55} />
