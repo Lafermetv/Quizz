@@ -36,7 +36,7 @@ if (verifierPacks()) {
 console.log('\n📦 Préparation du projet…');
 const serveUrl = await bundle({ entryPoint: path.resolve('src/index.ts') });
 const all = await getCompositions(serveUrl, { browserExecutable });
-let videos = all.filter((c) => !c.id.endsWith('-couverture'));
+let videos = all.filter((c) => !c.id.endsWith('-couverture') && !c.id.startsWith('profil-'));
 if (wanted.length) videos = videos.filter((c) => wanted.some((w) => c.id === w || c.id.startsWith(`${w}-partie-`)));
 if (!videos.length) {
   console.log(`Aucune vidéo trouvée pour : ${wanted.join(', ')}.\nVidéos disponibles : ${all.filter((c) => !c.id.endsWith('-couverture')).map((c) => c.id).join(', ')}`);
