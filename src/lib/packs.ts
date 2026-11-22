@@ -1,6 +1,6 @@
 import { splitGraphemes } from './emoji';
 
-export type Film = { emojis: string[]; title: string; year?: number; difficulty?: number };
+export type Film = { emojis: string[]; title: string; year?: number; difficulty?: number; poster?: string };
 
 export type QuizProps = {
   /** Nom affiché du pack (ex. « Disney & Pixar ») */
@@ -15,7 +15,7 @@ export type QuizProps = {
   music?: boolean;
 };
 
-type RawFilm = { emojis: string | string[]; title: string; year?: number; difficulty?: number };
+type RawFilm = { emojis: string | string[]; title: string; year?: number; difficulty?: number; poster?: string };
 type RawPack = {
   pack: string;
   theme?: string;

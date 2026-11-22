@@ -2,3 +2,6 @@ node_modules/
 out/
 .DS_Store
 *.log
+public/affiches/*
+!public/affiches/.gitkeep
+tmdb.txt

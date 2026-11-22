@@ -75,9 +75,23 @@ Ouvre un fichier du dossier `packs/` avec TextEdit, ou mieux avec un éditeur co
 
 Après chaque modification, lance `npm run verifier` : la commande te dit si un emoji n'existe pas ou si une virgule manque.
 
-## 4. Droits d'auteur
+## 4. Les affiches de films
 
-- **Aucune image de film** : seulement des emojis et les titres.
+À la réponse, l'affiche du film s'affiche en grand. Pour les récupérer :
+
+```bash
+npm run affiches
+```
+
+- Les images vont dans `public/affiches/` (ex. `le-roi-lion.jpg`). Une affiche déjà là n'est jamais remplacée.
+- **Affiches nettes et en français** : crée un compte gratuit sur themoviedb.org, demande une clé API (Paramètres → API), colle-la dans un fichier `tmdb.txt` à la racine du projet. Sans clé, les affiches viennent de Wikipédia (plus petites).
+- Une affiche introuvable ? Dépose l'image toi-même avec le nom indiqué.
+- Pas d'affiche pour un film = la réponse s'affiche en texte, comme avant.
+- Les affiches ne sont pas envoyées sur GitHub.
+
+## 5. Droits d'auteur
+
+- **Affiches** : elles appartiennent aux studios. TikTok peut couper le son ou retirer une vidéo sur réclamation ; la courte durée n'est pas une protection légale en France.
 - **Emojis** : Twemoji, licence CC BY 4.0. Le crédit est déjà affiché en petit sur l'écran de fin.
 - **Polices** : Lilita One et Fredoka, licence libre (OFL).
 - **Bruitages et musique** : fabriqués par ce projet (`npm run sons`), donc 100 % originaux. Tu peux aussi les remplacer par tes propres fichiers dans `public/sfx/` et `public/musique/`.

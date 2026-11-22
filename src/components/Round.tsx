@@ -1,14 +1,15 @@
 import React from 'react';
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Img, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import type { Film } from '../lib/packs';
 import type { RoundPlan } from '../lib/plan';
-import type { Palette } from '../lib/theme';
+import { inkOn, type Palette } from '../lib/theme';
 import { TEXT_FONT, TITLE_FONT } from '../lib/fonts';
 import { Background } from './Background';
 import { Confetti } from './Confetti';
 import { Emoji } from './Emoji';
 import { Sfx } from './Sfx';
 import { Wipe } from './Wipe';
+import { posterFor } from '../lib/posters';
 
 const W = 1080;
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
@@ -53,7 +54,14 @@ export const Round: React.FC<{
   // ----- réponse -----
   const ans = spring({ frame: frame - reveal - Math.round(0.15 * fps), fps, config: { damping: 9, stiffness: 150, mass: 0.7 } });
   const title = film.title;
-  const titleSize = title.length > 26 ? 86 : title.length > 17 ? 100 : 119;
+  const poster = posterFor(film);
+  const titleSize = poster ? (title.length > 26 ? 66 : title.length > 17 ? 80 : 96) : title.length > 26 ? 86 : title.length > 17 ? 100 : 119;
+  // affiche : arrive en « coup de tampon » avec un flash blanc et une petite secousse
+  const ps = spring({ frame: frame - reveal, fps, config: { damping: 11, stiffness: 170, mass: 0.8 } });
+  const flash = interpolate(frame, [reveal, reveal + 7], [0.75, 0], clamp);
+  const hit = frame - reveal - 3;
+  const shake = poster && hit >= 0 && hit < 9 ? Math.sin(hit * 2.9) * (9 - hit) * 2.2 : 0;
+  const lbl = spring({ frame: frame - reveal - Math.round(0.2 * fps), fps, config: { damping: 9, stiffness: 160, mass: 0.7 } });
 
   return (
     <Wipe duration={wipe} color={palette.acc}>
@@ -73,7 +81,7 @@ export const Round: React.FC<{
       </div>
 
       {/* titre */}
-      <h1 style={{ margin: 0, position: 'absolute', top: 405, width: '100%', textAlign: 'center', font: `113px/1 ${TITLE_FONT}`, letterSpacing: '0.02em', color: '#fff', textShadow: '0 12px 0 rgba(0,0,0,.25)' }}>
+      <h1 style={{ opacity: poster ? 1 - r : 1, margin: 0, position: 'absolute', top: 405, width: '100%', textAlign: 'center', font: `113px/1 ${TITLE_FONT}`, letterSpacing: '0.02em', color: '#fff', textShadow: '0 12px 0 rgba(0,0,0,.25)' }}>
         DEVINE LE <span style={{ color: palette.acc }}>FILM</span>
       </h1>
 
@@ -90,7 +98,7 @@ export const Round: React.FC<{
           justifyContent: 'center',
           alignContent: 'center',
           gap: '38px 54px',
-          transform: `translateY(${-80 * r}px) scale(${1 - 0.38 * r})`,
+          transform: poster ? `translateY(${-335 * r}px) scale(${1 - 0.5 * r})` : `translateY(${-80 * r}px) scale(${1 - 0.38 * r})`,
         }}
       >
         {film.emojis.map((e, k) => {
@@ -117,7 +125,22 @@ export const Round: React.FC<{
       </div>
 
       {/* réponse */}
-      {frame >= reveal && (
+      {frame >= reveal && poster && (
+        <div style={{ position: 'absolute', inset: 0, transform: `translate(${shake}px, ${shake * 0.5}px)` }}>
+          <div style={{ position: 'absolute', left: 305, top: 600, width: 470, height: 705, transform: `scale(${1.7 - 0.7 * ps}) rotate(${-3 + (1 - ps) * 10}deg)`, opacity: Math.min(1, ps * 2.5) }}>
+            <Img src={poster} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 26, border: '12px solid #fff', boxShadow: '0 26px 50px rgba(0,0,0,.35)', boxSizing: 'border-box', display: 'block' }} />
+            {film.year ? (
+              <div style={{ position: 'absolute', right: -46, top: -34, transform: `rotate(12deg) scale(${lbl})`, font: `50px/1 ${TITLE_FONT}`, background: palette.acc, color: inkOn(palette.acc), padding: '18px 22px 12px', borderRadius: 26, boxShadow: '0 8px 0 rgba(0,0,0,.22)' }}>{film.year}</div>
+            ) : null}
+          </div>
+          <div style={{ position: 'absolute', top: 1225, left: 40, right: 40, textAlign: 'center', transform: `scale(${lbl}) rotate(${(1 - lbl) * -14}deg)`, opacity: Math.min(1, lbl * 3) }}>
+            <div style={{ display: 'inline-block', font: `${titleSize}px/1.04 ${TITLE_FONT}`, textWrap: 'balance', background: '#fff', color: palette.c2, padding: '26px 50px 18px', borderRadius: 44, boxShadow: '0 15px 0 rgba(0,0,0,.2)', transform: 'rotate(-2deg)', maxWidth: 1000 }}>
+              {title}
+            </div>
+          </div>
+        </div>
+      )}
+      {frame >= reveal && !poster && (
         <div style={{ position: 'absolute', top: 905, left: 54, right: 54, textAlign: 'center', transform: `scale(${ans}) rotate(${(1 - ans) * -20}deg)`, opacity: Math.min(1, ans * 3) }}>
           <div style={{ font: `700 50px ${TEXT_FONT}`, color: '#fff', opacity: 0.92, marginBottom: 30 }}>C'était…</div>
           <div
@@ -143,13 +166,15 @@ export const Round: React.FC<{
           ) : null}
         </div>
       )}
-      <Confetti at={reveal} x={540} y={1060} seed={`c${index}`} />
+      {poster && frame >= reveal && <div style={{ position: 'absolute', inset: 0, background: '#fff', opacity: flash }} />}
+      <Confetti at={reveal} x={540} y={poster ? 950 : 1060} seed={`c${index}`} />
 
       {/* sons */}
       <Sfx at={0} name="whoosh" volume={0.55} />
       {lands.map((l, k) => <Sfx key={k} at={l - 1} name="pop" volume={0.8} />)}
       {Array.from({ length: think }, (_, k) => <Sfx key={`t${k}`} at={thinkStart + k * fps} name={think - k <= 2 ? 'tic-aigu' : 'tic'} volume={0.55} />)}
       <Sfx at={reveal} name="ding" volume={0.75} />
+      {poster && <Sfx at={reveal + 3} name="tampon" volume={0.7} />}
     </Wipe>
   );
 };
