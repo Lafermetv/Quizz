@@ -4,7 +4,7 @@ import type { Film } from '../lib/packs';
 import type { RoundPlan } from '../lib/plan';
 import { inkOn, type Palette } from '../lib/theme';
 import { TEXT_FONT, TITLE_FONT } from '../lib/fonts';
-import { Background } from './Background';
+import { Background, BACKGROUNDS } from './Background';
 import { Confetti } from './Confetti';
 import { Emoji } from './Emoji';
 import { Sfx } from './Sfx';
@@ -65,7 +65,7 @@ export const Round: React.FC<{
 
   return (
     <Wipe duration={wipe} color={palette.acc}>
-      <Background palette={palette} beatFrames={beatFrames} beatOffset={start} />
+      <Background palette={palette} beatFrames={beatFrames} beatOffset={start} style={BACKGROUNDS[index % BACKGROUNDS.length]} />
 
       {/* étoile + numéro */}
       <div style={{ position: 'absolute', left: 65, top: 205, width: 184, height: 184, display: 'grid', placeItems: 'center', transform: `scale(${star}) rotate(${(1 - star) * -20}deg)` }}>
