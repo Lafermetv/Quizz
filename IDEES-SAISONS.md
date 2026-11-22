@@ -177,6 +177,14 @@ Chaque emoji donne une partie du mot, comme un rébus.
   4. **Pas d'emoji abstrait** (🔁, 💸) : on ne les comprend pas en 1 seconde.
 - La planche `docs/planche-emojis-saisons.jpg` montre chaque idée avec les vrais emojis 3D de la vidéo.
 
+## Avant de produire une saison : le test à l'aveugle
+Pour chaque nouvelle saison, on fait comme pour les films :
+1. Un « expert » propose les indices.
+2. Deux « joueurs » qui ne connaissent pas les réponses essaient de deviner, en regardant le vrai rendu 3D.
+3. Ce qui n'est pas trouvé est corrigé, puis retesté.
+
+Résultat sur la saison films : 68 indices sur 110 améliorés, puis tous trouvés à l'aveugle.
+
 ## Rappel sur les droits
 - **Emojis, textes, couleurs, sons et musique du projet :** aucun risque.
 - **Affiches, photos de personnes, logos, extraits de chansons :** ils appartiennent à quelqu'un d'autre. Le plus souvent, TikTok coupe le son ou retire la vidéo, et le risque de grève (strike) augmente avec le nombre de réclamations.

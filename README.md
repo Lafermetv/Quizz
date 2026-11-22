@@ -48,6 +48,8 @@ La première fois, l'outil télécharge tout seul un petit navigateur, c'est nor
 | une vidéo plus fluide (60 images/s) | `npm run videos -- --fps 60` |
 | seulement les couvertures (rapide) | `npm run couvertures` |
 | télécharger les images des réponses | `npm run images` |
+| chercher un emoji par mot-clé | `npm run emoji -- search potion` |
+| vérifier que des emojis existent en 3D | `npm run emoji -- check "🐗🧪🐫"` |
 | vérifier mes listes de films | `npm run verifier` |
 | regarder une vidéo sans l'exporter | `npm run apercu` |
 
@@ -77,6 +79,13 @@ Ouvre un fichier du dossier `packs/` avec TextEdit, ou mieux avec un éditeur co
 **Nouveau thème ?** Copie un fichier, renomme-le (par exemple `films-noel.json`, sans espace ni accent), puis change son contenu.
 
 Après chaque modification, lance `npm run verifier` : la commande te dit si un emoji n'existe pas ou si une virgule manque.
+
+**Bien choisir les emojis.** Chaque emoji doit avoir un sens évident une fois la réponse connue :
+- un objet culte, une scène culte, un personnage, ou un jeu de mots sur le titre ;
+- pas d'emoji « bouche-trou » (🏰, 👑 ou ⚔️ seuls) ;
+- pas de rond de couleur, qui ressemble à une boule en 3D.
+
+Les 110 indices actuels ont tous été testés « à l'aveugle » : des joueurs qui ne connaissaient pas la réponse ont dû la trouver.
 
 ## 4. Les images des réponses (affiches, photos, logos…)
 
