@@ -1,0 +1,22 @@
+{
+  "pack": "Footballeurs",
+  "theme": "turquoise",
+  "thinkSeconds": 4,
+  "devine": "le joueur",
+  "pluriel": "joueurs",
+  "recherche": "footballeur",
+  "dossierImages": "images/footballeurs",
+  "bareme": ["T'as jamais vu un match 🙈", "Supporter du dimanche ⚽", "Expert du ballon rond 🏆"],
+  "questions": [
+    { "emojis": ["🐐", "🇦🇷", "🔟"], "title": "Lionel Messi", "difficulty": 1 },
+    { "emojis": ["🇵🇹", "7️⃣", "🗣️"], "title": "Cristiano Ronaldo", "difficulty": 1 },
+    { "emojis": ["🐢", "🇫🇷", "⚡"], "title": "Kylian Mbappé", "difficulty": 1 },
+    { "emojis": ["🇧🇷", "🤸‍♂️", "💇‍♂️"], "title": "Neymar", "difficulty": 1 },
+    { "emojis": ["🇫🇷", "🧑‍🦲", "🐏"], "title": "Zinédine Zidane", "difficulty": 2 },
+    { "emojis": ["🧘‍♂️", "🤖", "🇳🇴"], "title": "Erling Haaland", "difficulty": 2 },
+    { "emojis": ["📞", "🕺", "🇫🇷"], "title": "Antoine Griezmann", "difficulty": 2 },
+    { "emojis": ["🦁", "🇸🇪", "🥋"], "title": "Zlatan Ibrahimović", "difficulty": 2 },
+    { "emojis": ["👑", "🇪🇬", "🐦"], "title": "Mohamed Salah", "difficulty": 3 },
+    { "emojis": ["🇧🇪", "🧠", "🎯"], "title": "Kevin De Bruyne", "difficulty": 3 }
+  ]
+}
