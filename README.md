@@ -9,6 +9,8 @@ Fabrique automatique de vidéos TikTok, Reels et Shorts : **« Devine le film av
 
 ---
 
+Idées pour les prochaines saisons : voir [IDEES-SAISONS.md](IDEES-SAISONS.md).
+
 ## 1. Installer (une seule fois sur le MacBook)
 
 1. Installe **Node.js** : va sur <https://nodejs.org>, télécharge la version « LTS » et installe-la comme une application normale.
@@ -92,7 +94,7 @@ npm run affiches
 ## 5. Droits d'auteur
 
 - **Affiches** : elles appartiennent aux studios. TikTok peut couper le son ou retirer une vidéo sur réclamation ; la courte durée n'est pas une protection légale en France.
-- **Emojis** : Twemoji, licence CC BY 4.0. Le crédit est déjà affiché en petit sur l'écran de fin.
+- **Emojis** : les emojis 3D « Fluent » de Microsoft (licence MIT), et Twemoji (CC BY 4.0) quand un emoji n'existe pas en 3D. Le crédit est affiché en petit sur l'écran de fin.
 - **Polices** : Lilita One et Fredoka, licence libre (OFL).
 - **Bruitages et musique** : fabriqués par ce projet (`npm run sons`), donc 100 % originaux. Tu peux aussi les remplacer par tes propres fichiers dans `public/sfx/` et `public/musique/`.
 - **Remotion** (l'outil qui fabrique les vidéos) : gratuit pour un particulier ou une petite équipe.

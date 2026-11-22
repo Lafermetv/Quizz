@@ -51,7 +51,7 @@ export const Outro: React.FC<{ palette: Palette; count: number; part?: number; t
           <EmojiText text={next} />
         </div>
       </div>
-      <div style={{ position: 'absolute', top: 1450, width: '100%', textAlign: 'center', font: `500 24px ${TEXT_FONT}`, color: '#fff', opacity: 0.55 }}>Emojis : Twemoji · CC BY 4.0</div>
+      <div style={{ position: 'absolute', top: 1450, width: '100%', textAlign: 'center', font: `500 24px ${TEXT_FONT}`, color: '#fff', opacity: 0.55 }}>Emojis : Microsoft Fluent (MIT) · Twemoji (CC BY 4.0)</div>
       <Sfx at={0} name="whoosh" volume={0.55} />
       <Sfx at={wipe} name="applaudissements" volume={0.5} />
       <Sfx at={wipe} name="ding" volume={0.6} />

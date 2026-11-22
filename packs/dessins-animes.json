@@ -1,0 +1,12 @@
+{ "pack": "Dessins animés", "theme": "rose", "thinkSeconds": 4, "films": [
+  { "emojis": ["🧽", "⭐", "🍍"], "title": "Bob l'éponge", "year": 1999, "difficulty": 1 },
+  { "emojis": ["🍩", "🟡", "📺"], "title": "Les Simpson", "year": 1989, "difficulty": 1 },
+  { "emojis": ["⚡", "🐭", "🎒"], "title": "Pokémon", "year": 1997, "difficulty": 1 },
+  { "emojis": ["🐱", "🐭", "🧀"], "title": "Tom et Jerry", "year": 1940, "difficulty": 1 },
+  { "emojis": ["🐶", "👻", "🚐"], "title": "Scooby-Doo", "year": 1969, "difficulty": 1 },
+  { "emojis": ["🐉", "🟠", "⭐"], "title": "Dragon Ball Z", "year": 1989, "difficulty": 2 },
+  { "emojis": ["🍥", "🦊", "🥷"], "title": "Naruto", "year": 2002, "difficulty": 2 },
+  { "emojis": ["🐱", "🪳", "🛋️"], "title": "Oggy et les Cafards", "year": 1998, "difficulty": 2 },
+  { "emojis": ["🕵️‍♀️", "💄", "🌍"], "title": "Totally Spies", "year": 2001, "difficulty": 3 },
+  { "emojis": ["💻", "🌐", "⚔️"], "title": "Code Lyoko", "year": 2003, "difficulty": 3 }
+] }
