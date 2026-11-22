@@ -41,7 +41,7 @@ export const Round: React.FC<{
 
   // ----- emojis -----
   const n = film.emojis.length;
-  const size = n > 3 ? 205 : 250;
+  const size = n > 3 ? 196 : 250;
   const r = spring({ frame: frame - reveal, fps, config: { damping: 15, stiffness: 120 } });
 
   // ----- chrono -----
@@ -108,7 +108,7 @@ export const Round: React.FC<{
           flexWrap: 'wrap',
           justifyContent: 'center',
           alignContent: 'center',
-          gap: '38px 54px',
+          gap: n > 3 ? "38px 30px" : "38px 54px",
           transform: poster ? `translateY(${-335 * r}px) scale(${1 - 0.5 * r})` : `translateY(${-80 * r}px) scale(${1 - 0.38 * r})`,
         }}
       >
