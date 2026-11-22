@@ -1,6 +1,7 @@
 import React from 'react';
 import { Composition, Folder, Still } from 'remotion';
 import { Cover } from './Cover';
+import { ProfilePic } from './ProfilePic';
 import { Quiz, quizMetadata } from './Quiz';
 import './lib/fonts';
 import { loadVideos } from './lib/packs';
@@ -19,6 +20,11 @@ export const RemotionRoot: React.FC = () => (
       {videos.map((v) => (
         <Still key={v.id} id={`${v.id}-couverture`} component={Cover} width={1080} height={1920} defaultProps={v.props} />
       ))}
+    </Folder>
+    <Folder name="profil">
+      <Still id="profil-popcorn" component={ProfilePic} width={1080} height={1080} defaultProps={{ emoji: '🍿', theme: 1 }} />
+      <Still id="profil-clap" component={ProfilePic} width={1080} height={1080} defaultProps={{ emoji: '🎬', theme: 0 }} />
+      <Still id="profil-reflechit" component={ProfilePic} width={1080} height={1080} defaultProps={{ emoji: '🤔', theme: 2 }} />
     </Folder>
   </>
 );
